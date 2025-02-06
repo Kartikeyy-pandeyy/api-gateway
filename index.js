@@ -9,8 +9,8 @@ app.use(express.json());
 app.post("/calculate", async (req, res) => {
     const { num1, num2, operation } = req.body;
     const backendUrl = operation === "add" 
-        ? "http://arithmetic-service:5001/add" 
-        : "http://arithmetic-service:5001/subtract";
+        ? "http://calculator-production-e65e.up.railway.app:5001/add" 
+        : "http://calculator-production-e65e.up.railway.app:5001/subtract";
 
     try {
         const response = await axios.post(backendUrl, { num1, num2 });
