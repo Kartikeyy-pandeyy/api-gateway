@@ -12,16 +12,16 @@ app.post("/calculate", async (req, res) => {
     if(operation === "add") {
         backendUrl = "https://calculator-production-e65e.up.railway.app/add"
     }
+
     else if(operation === "subtract") {
         backendUrl = "https://calculator-production-e65e.up.railway.app/subtract"
     }
+
     else if(operation === "multiply") {
         backendUrl = "https://calculator-production-e65e.up.railway.app/multiply"
     }
+
     else if(operation === "divide") {
-        backendUrl = "https://calculator-production-e65e.up.railway.app/divide"
-    }
-    else if(operation === "exponent") {
         backendUrl = "https://calculator-production-e65e.up.railway.app/divide"
     }
     console.log("Request received:", { num1, num2, operation });
