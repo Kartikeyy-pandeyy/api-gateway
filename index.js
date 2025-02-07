@@ -24,6 +24,9 @@ app.post("/calculate", async (req, res) => {
     else if(operation === "divide") {
         backendUrl = "https://calculator-production-e65e.up.railway.app/divide"
     }
+    else if(operation === "exponent") {
+        backendUrl = "https://calculator-production-e65e.up.railway.app/exponent"
+    }
     console.log("Request received:", { num1, num2, operation });
     console.log("Forwarding request to backend:", backendUrl);
 
