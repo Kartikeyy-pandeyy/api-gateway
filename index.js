@@ -32,5 +32,5 @@ app.post("/calculate", async (req, res) => {
     }
 });
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`API Gateway running on port ${PORT}`));
